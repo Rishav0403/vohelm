@@ -54,6 +54,6 @@ HospitalSchema.methods.comparePassword = async function (candidatePassword) {
   return isMatch;
 };
 
-const HospitalModel = mongoose.model("User", HospitalSchema);
+const HospitalModel = mongoose.model("Hospital", HospitalSchema);
 
 export default HospitalModel;
