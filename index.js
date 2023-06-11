@@ -20,7 +20,7 @@ import router from "./route/router.js";
 app.get("/", (req, res) => {
   res.json({ message: "connected to server" });
 });
-app.use("/api", router);
+app.use("/api/v1", router);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
